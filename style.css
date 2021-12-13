@@ -37,8 +37,6 @@ a:active {
    
 }
 
-
-
 .left {
    width: 100%;
    background-color: #333; 
@@ -56,11 +54,15 @@ a:active {
     justify-content: center;
 }
 
+.button-right {
+    display: none;
+}
+
 .btn {
     height: 50px;
     width: 200px;
     background-color: #333;
-    border-radius: px;
+    border-radius: 5px;
     color:red;
     border-color: red;
     font-weight: bold;
@@ -75,6 +77,8 @@ img {
 }
 
 .right {
+    position: relative;
+
     width: 100%;
     height: 150px;
     background-color: #333;
@@ -83,8 +87,127 @@ img {
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: rgb(221, 38, 38);
     height:200px;
     width: 100%;
     text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+
+    .nav_btn {
+        margin: 0 10px 0 0;
+        width: 150px;
+        height: 40px;
+        background-color: #333;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        color:red;
+        border-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 20px;
+       
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px 0 20px ;
+        font-size: 25px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px 0 20px ;
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 40px;
+    }
+    h5 {
+        font-size: 30px;
+    }
+    h6 {
+        font-size: 20px;
+    }
+
+    .button {
+        position: relative;
+        top: -125px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button-right {
+        display: none;
+    }
+
+    .btn {
+        height: 80px;
+        width: 400px;
+        background-color: #333;
+        border-radius: 5px;
+        color:red;
+        border-color: red;
+        font-weight: bold;
+        font-size:30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+@media only screen and (min-width: 1025px) {
+    .banner {
+        display: flex;
+        flex-direction: row;
+        height:800px;
+    }
+
+    .img {
+        height: 800px;
+    }
+
+    .left {
+        width: 40%;
+        height: 800px;
+        background-color: #333; 
+        object-fit: contain;
+     }
+
+     .right {
+        width: 60%;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px 0 20px ;
+        font-size: 25px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .button-right {
+        display: block;
+    }
+    
 }
